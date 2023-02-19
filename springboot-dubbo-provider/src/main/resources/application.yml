@@ -1,0 +1,23 @@
+server:
+  port: 8010
+
+spring:
+  # 应用名称（nacos会将改名称作为服务名称）
+  application:
+    name: springboot-dubbo-provider
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      # 注册中心
+      discovery:
+        namespace: public #命名空间，如prod，dev，默认public
+      # 配置中心
+      config:
+        server-addr: localhost:8848
+
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://localhost:8848
