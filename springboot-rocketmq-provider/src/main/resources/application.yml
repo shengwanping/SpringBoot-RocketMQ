@@ -1,0 +1,7 @@
+server:
+  port: 8010
+
+rocketmq:
+  name-server: localhost:9876 # 连接Rocketmq Name Server服务注册中心
+  producer: # 生产者
+    group: producer-one # 生产者组.随意取名
