@@ -3,5 +3,5 @@ server:
 
 rocketmq:
   name-server: localhost:9876 # 连接Rocketmq Name Server服务注册中心
-  producer: # 消费者者
+  consumer: # 消费者者
     group: consumer-one # 消费者组.随意取名
